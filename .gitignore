@@ -1,0 +1,62 @@
+# --- GLOBAL ---
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+
+# Docker
+docker-compose.override.yml
+docker-data/
+db-data/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env files (never commit secrets!)
+.env
+.env.*
+!.env.example
+
+
+# --- BACKEND (Laravel) ---
+backend/vendor/
+backend/node_modules/
+backend/bootstrap/cache/*.php
+backend/storage/*.key
+backend/storage/app/*
+backend/storage/app/public/*
+backend/storage/framework/cache/*
+backend/storage/framework/sessions/*
+backend/storage/framework/testing/*
+backend/storage/framework/views/*
+backend/storage/logs/*
+backend/public/storage/
+
+# Laravel compiled
+backend/storage/*.key
+backend/public/hot
+backend/public/storage
+backend/public/mix-manifest.json
+
+# Testing/cache
+backend/.phpunit.cache/
+backend/phpunit-resultcache.txt
+
+
+# --- FRONTEND (React + Vite) ---
+frontend/node_modules/
+frontend/dist/
+frontend/.eslintcache
+
+
+# --- CI/Build artifacts ---
+coverage/
+*.iml
